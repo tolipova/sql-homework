@@ -29,8 +29,8 @@ cursor.execute(query)
 found_users = cursor.fetchall()
 for user in found_users:
     print(user)
+conn.commit()
 
-cursor = conn.cursor()
 query = "DELETE FROM users WHERE email LIKE '%@example%'"
 
 # O'chirish so'rovini bajarish
